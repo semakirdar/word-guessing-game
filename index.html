@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="plugins/fontawesome/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="view">
+        <div class="login" id="login">
+            <h2>KELİMEBAZ</h2>
+            <input id="inputUserName" placeholder="Bir takma ad yazın ve başlayın">
+            <div class="login-avatar" id="loginAvatar">
+                <img class="avatar" src="images/user-avatar-sema.png" data-target="images/user-avatar-sema.png">
+                <img class="avatar" src="images/user-avatar-2.png" data-target="images/user-avatar-2.png">
+                <img class="avatar" src="images/user-avatar-3.png" data-target="images/user-avatar-3.png">
+                <img class="avatar" src="images/user-avatar-4.png" data-target="images/user-avatar-4.png">
+            </div>
+            <button class="play-button" id="playButton"><i class="fas fa-play"></i></button>
+        </div>
+        <div class="game" id="game">
+            <div class="game-close" id="gameClose"><i class="far fa-times-circle"></i></div>
+            <h2>KELİMEBAZ</h2>
+            <div class="content" id="content">
+                <div class="modal" id="modal">
+                    <div class="userName">
+                    </div>
+                </div>
+                <button class="btnModal" id="btnOpenModal">Show users</button>
+                <div id="notification" class="notification">
+
+                </div>
+
+                <div class="second" id="gameTimer">
+                </div>
+
+                <div class="content-box" id="contentBox">
+
+
+                </div>
+                <div class="messages" id="messages">
+
+
+                </div>
+            </div>
+
+            <div class="send-message">
+                <input id="inputMessage" placeholder="cevabınızı buraya yazın ve yollayın">
+                <button id="sendButton" class="send-button"><i class="fas fa-check"></i></button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"
+        integrity="sha512-iZIBSs+gDyTH0ZhUem9eQ1t4DcEn2B9lHxfRMeGQhyNdSUz+rb+5A3ummX6DQTOIs1XK0gOteOg/LPtSo9VJ+w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+</body>
+</html>
